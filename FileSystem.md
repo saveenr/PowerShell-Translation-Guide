@@ -4,10 +4,11 @@
 ### Get all files in a folder		
 
 ```
-C# 3.0		
-	Python or IronPython			
+C#		
 
-PowerShell 2.0	
+Python
+
+PowerShell	
 	$files = Get-ChildItem		
 ```
 
@@ -15,11 +16,11 @@ PowerShell 2.0
 
 
 ```
-C# 3.0		
+C#	
 
-Python or IronPython			
+Python
 
-PowerShell 2.0	
+PowerShell
 	$files = Get-ChildItem *.dll		
 ```
 
@@ -27,28 +28,33 @@ PowerShell 2.0
 
 
 ``` 
-Python or IronPython			
+C#
+
+Python
 
 PowerShell 
-	2.0	$files = Get-ChildItem -Recurse		
+    $files = Get-ChildItem -Recurse		
 ```
 
 ### Get all files in a folder recursivelyand get full pathname	
 
 
 ```
-C# 3.0			
+C#			
 
-Python or IronPython			
+Python			
 
-PowerShell 2.0	
+PowerShell
 	$files = Get-ChildItem –Recurse | Foreach-Object { $_.FullName}		
 ```
 
-### Getting the My Documents Folder	C# 3.0			
+### Getting the My Documents Folder
 
 ```
-Python or IronPython			
+
+C#
+
+Python
 
 PowerShell 2.0
 	[Environment]::GetFolderPath("MyDocuments")		
@@ -83,7 +89,7 @@ C# 3.0
 Python or IronPython	
 	os.path.join( "foo\\bar" , "beer" )		
 
-PowerShell 2.0	
+PowerShell
 	join-path "foo\bar" "beer"		
 ```			
 
@@ -91,61 +97,65 @@ PowerShell 2.0
 
 
 ```
-C# 3.0	
-	if (System.IO.Directory.Exists("d:\\foo")) { }
-	if (System.IO.File.Exists("d:\\foo.txt")) { }
+C#
+	System.IO.Directory.Exists("d:\\foo")
+	System.IO.File.Exists("d:\\foo.txt"))
 
 
-Python or IronPython	
-	if (os.path.exists( "d:\\foo.txt" )) :
-    	# do something
+Python	
+	os.path.exists( "d:\\foo.txt" )
 
 
-PowerShell 2.0	
-    if ( test-path "d:\foo.txt" ) { }
-	if ( ! (test-path "D:\\x") ) { }
+PowerShell
+    test-path "d:\foo.txt"
+
 
 ```		
 
 ### Get Full path			
 
 ```
-C# 3.0	
+C#	
 	System.IO.Path.GetFullPath("foo.txt")	
 
-Python or IronPython	
+Python
 	os.path.abspath( "foo.txt" )		
 
-PowerShell 2.0	
+PowerShell
 	[IO.Path]::GetFullPath("foo.txt")		
 ```
 
 ### Normalize Paths	
 
 ``` 
-Python or IronPython			
+C#
+
+Python
 
 
-PowerShell 2.0	
+PowerShell
 	$d = resolve-path "D:\foo\..\bar\beer"		
 ```
 
 ### Create a Directory				
 
 ```
-PowerShell 2.0	
+C#
+
+Python
+
+PowerShell
 	New-Item -Path d:\folder -ItemType Directory		
 ```
 
 ### Delete Folder and Contents Recursively	
 
 ```
-C# 3.0			
+C#	
 
-
-Python or IronPython			
+Python
 
 PowerShell 2.0	
-	Remove-Item $folder -Recurse		
+	Remove-Item "D:/folder" -Recurse		
 				
 ```
