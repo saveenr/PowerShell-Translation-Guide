@@ -5,29 +5,30 @@
 
 
 ```
-C# 3.0	
-	var t = Tuple.Create("Foo", 1.7);		
+C#
+    var t = Tuple.Create("Foo", 1.7);		
 
-Python or IronPython		
-	t  = ( "Foo", 1.7 )		
+Python
+    t  = ( "Foo", 1.7 )		
 
 
-PowerShell 2.0	
-	N/A		
+PowerShell
+    N/A		
 ```				
+
 # Arrays				
 ---
 
 ```
-C# 3.0	
+C#	
 	var names = new int[] { 1, 2, 3 };		
 
-Python or IronPython	
+Python	
 	# via the array module
 	# you are better-off using python lists 99.99% percent of the time
 	names = array.array('i', [1,2,3] )
 		
 
-PowerShell 2.0	
+PowerShell
 	N/A		
 ```
