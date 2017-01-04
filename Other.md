@@ -8,19 +8,19 @@
 
 
 ``` 
-C# 3.0	
+C#	
 	var a = new [] { 1, 2, 3};
 	var b = new [] { "a", "b", "c" };
 	var c = Enumerable.Range(a.Length)
     	.Select( i=> new { v0=a[i], v1=b[i] } )
     	.List();		
 
-Python or IronPython	
+Python	
 	a = [1,2,3]
 	b = ["a","b","c"]
 	c = zip(a,b)		
 
-PowerShell 2.0	
+PowerShell	
 	$a = @( 1, 2, 3 ) 
 	$b = @( "a", "b", "c" ) 
 	$c = 0..($a.count - 1) | 
@@ -33,25 +33,26 @@ PowerShell 2.0
 ### Add members				
 
 ```
-C# 3.0	
+C#	
 	N/A		
 
-Python or IronPython	
+Python	
 	N/A		
 
-PowerShell 2.0	
+PowerShell	
 	$obj1 | Add-Member -type NoteProperty -name PropName -Value "PropValue"		
 ```			
 
 ### Get List Of Property Values				
 
 ```
-C# 3.0			
+C#
 
-Python or IronPython			
+Python
 
-PowerShell 2.0	
-	get-service alerter | format-list -property *		
+PowerShell
+    get-service alerter | format-list -property *		
+
 ```
 				
 				
@@ -136,6 +137,4 @@ PowerShell 2.0
 
 ### Counting Events by Source
     $applog | group Source | Sort-Object Count –Descending
-
-
 
