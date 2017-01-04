@@ -4,6 +4,6 @@
 ### Create A Queue	
 
 ```
-PowerShell 2.0	
+PowerShell
 	$q = New-Object System.Collections.Queue		
 ```
