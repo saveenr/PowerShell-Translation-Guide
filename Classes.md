@@ -4,7 +4,7 @@
 ### Create a new class				
 
 ```
-C# 3.0	
+C#	
 	public class Record
 	{
 	   public string Name;
@@ -16,7 +16,7 @@ Python
 	        pass
 		
 
-PowerShell 2.0	
+PowerShell	
 
 	add-type @"
 	public class Record
@@ -29,12 +29,12 @@ PowerShell 2.0
 ### Create an instanceof a class			
 
 ```
-C# 3.0	
+C
 	var rec1 = new Record()	
 	
-Python or IronPython	
+Python
 	rec1 = Record()		
 
-PowerShell 2.0	
+PowerShell
 	$rec1 = new-object Record		
 ```
