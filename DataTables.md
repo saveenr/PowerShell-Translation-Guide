@@ -5,23 +5,22 @@ Create a DataTable
 ----------------------------------------
 
 ```
-C# 3.0			
+C#	
 
-Python or IronPython			
+Python
 
-PowerShell 2.0	
+PowerShell
 	$data1=New-ObjectSystem.Data.Datatable
 ```
 	
 ### Define the Datatable Columns		
 		
 ```
-C# 3.0			
+C#		
 
-Python or IronPython			
+Python
 
-PowerShell 2.0	
-
+PowerShell
     $data1.Columns.Add("Value",[double])
     $data1.Columns.Add("Category",[string])
 ```
@@ -29,12 +28,12 @@ PowerShell 2.0
 # Populating a datatable				
 
 ```
-C# 3.0			
+C#		
 
-Python or IronPython			
+Python
 
-PowerShell 2.0	
-	$data1.Rows.Add(1,"A")
+PowerShell
+    $data1.Rows.Add(1,"A")
     $data1.Rows.Add(2,"B")
     $data1.Rows.Add(3,"C")
 ```		
