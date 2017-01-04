@@ -7,41 +7,41 @@
 
 
 ```
-C# 3.0	
+C#
 	var names = new List<object> { "Foo, "Bar", "Beer" };	
 
-Python or IronPython	
+Python
 	names = [ "Foo", "Bar", "Beer" ]		
 
-PowerShell 2.0	
+PowerShell
 	$names =@( "Foo", "Bar", "Beer" )
-or
+        #or
 	$names = "Foo", "Bar", "Beer"		
 ```
 
 ### New List (typed)
 
 ```
-C# 3.0	
+C#
 	var names = new List<string> { "Foo, "Bar", "Beer" };		
 
-Python or IronPython	
+Python
 	N/A		
 
-PowerShell 2.0	
+PowerShell
 	[string[]] $names = @( "Foo", "Bar", "Beer" )
 ```		
 				
 ### New empty list (untyped)
 
 ```
-C# 3.0	
+C#
 	var names = new List<object> { };		
 
-Python or IronPython	
+Python
 	names = []
 
-PowerShell 2.0	
+PowerShell
 	$names =@( )		
 ```
 
@@ -49,13 +49,13 @@ PowerShell 2.0
 
 
 ```
-C# 3.0	
+C#
 	var names = new List<string> { };		
 
-Python or IronPython	
+Python 
 	N/A
 		
-PowerShell 2.0	
+PowerShell
 	[string[]] $names =@( )		
 ```
 
@@ -63,12 +63,12 @@ PowerShell 2.0
 
 
 ```
-C# 3.0	
+C#
 	names.Count		
 
-Python or IronPython	
+Python
 	len(names)		
 
-PowerShell 2.0	
+PowerShell 
 	$names.Length		
 ```
