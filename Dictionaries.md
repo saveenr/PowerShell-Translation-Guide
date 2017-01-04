@@ -6,17 +6,17 @@
 ### Empty Dictionary				
 
 ```
-C# 3.0	
+C#
 	using System.Collections.Generic;
 	var d = new Dictionary<string,string>;		
 
 
-Python or IronPython	
+Python
 	d = { }
 	d = dict()
 		
 
-PowerShell 2.0	
+PowerShell
 	$d = @{ }		
 ```
 
@@ -55,14 +55,14 @@ PowerShell 2.0
 
 
 ```
-C# 3.0	
+C#
 	if (d.ContainsKey("foo") { … }		
 
-Python or IronPython	
+Python
 	if ( "foo" in d ) :
     	#do something		
 
-PowerShell 2.0	
+PowerShell	
 	if $d.ContainsKey("foo") { }		
 ```
 
@@ -71,13 +71,13 @@ PowerShell 2.0
 
 
 ```
-C# 3.0	
+C#
 	d[ "foo" ]		
 
-Python or IronPython	
+Python
 	d[ "foo" ]		
 
-PowerShell 2.0	
+PowerShell
 	$d.Item("foo")		
 ```
 
@@ -85,9 +85,9 @@ get all keys
 
 ```
 C# 
-	3.0	d.Keys		
+	d.Keys		
 
-Python or IronPython	
+Python	
 	d.keys()
 or
 	[k for k in d.iterkeys()]		
@@ -103,27 +103,27 @@ PowerShell 2.0
 C# 3.0	
 	d.Values		
 
-Python or IronPython	
+Python	
 	d.values()
-or
+        # or
 	[v for v in d.itervalues()]		
 
-PowerShell 2.0	
+PowerShell
 	$d.Values		
 ```
 
 # unique elements				
 
 ```
-C# 3.0	
+C#	
 	var a = new [] { "a", "b", "c" };
 	var b = a.Distinct().ToList();		
 
-Python or IronPython	
+Python	
 	a = ["a", "a", "b"]
 	b = set( a )		
 
-PowerShell 2.0	
+PowerShell	
 	$a = @( "a", "a", "b" ) 
 	$b = a | sort –unique		
 ```
