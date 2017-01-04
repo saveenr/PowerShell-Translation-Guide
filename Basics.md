@@ -44,7 +44,7 @@ C#
 Python 
 	hello = "world"		
 
-PowerShell 2.0	
+PowerShell
 	$hello = "word"		
 ```
 
@@ -61,7 +61,7 @@ Python
 	if ( False ) :
     	# do nothing		
 
-PowerShell 2.0	
+PowerShell
 	if ( $true ) { }
 	if ( $false ) { }		
 ```
@@ -77,7 +77,7 @@ Python or IronPython
 	if (a == None) :
     	    # do nothing		
 
-PowerShell 2.0	
+PowerShell
 	if ( $a –eq $null ) { }		
 ```
 
@@ -88,10 +88,10 @@ C# 3.0
     N/A
 
 
-Python or IronPython	
+Python	
     pass		
 
 
-PowerShell 2.0			
+PowerShell			
     N/A
 ```
