@@ -4,15 +4,15 @@
 ### Throwing a specific .NET Exception	
 
 ```
-C# 3.0	
+C#
 	throw new System.IO.DirectoryNotFoundException()		
 	throw new System.IO.DirectoryNotFoundException("Could not find file FOO")		
 
-Python or IronPython	
+Python
 	raise System.IO.System.IO.DirectoryNotFoundException()		
 	raise System.IO.System.IO.DirectoryNotFoundException("Could not find file FOO")		
 
-PowerShell 2.0	
+PowerShell
 	throw (new-object System.IO.DirectoryNotFoundException)		
 	throw (new-object System.IO.DirectoryNotFoundException "Could not find file FOO")		
 ```
