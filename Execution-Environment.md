@@ -6,11 +6,11 @@
 ###Get current directory				
 
 ```
-C# 3.0			
+C#
 
-Python or IronPython			
+Python
 
-PowerShell 2.0	
+PowerShell
 	$d = Get-Location		
 ```
 
@@ -18,14 +18,11 @@ PowerShell 2.0
 
 
 ```
-C# 3.0			
+C#
 
-Python or IronPython			
+Python
 
-PowerShell 2.0	
+PowerShell
 	$d = Split-Path $MyInvocation.MyCommand.Path		
 ```
-
-### What runtime is being used				
-
-				
+	
