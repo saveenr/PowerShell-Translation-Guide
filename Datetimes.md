@@ -35,11 +35,12 @@ PowerShell 2.0
 ### parse a date time string				
 
 ```
-C# 3.0			
-
-Python or IronPython			
+C#
+    var d = System.DateTime.parse( "1979/3/31" )
+    
+Python			
 
 PowerShell 2.0	
-	$t0 = get-date "1979/3/31"
-	$t1 = get-date "1979/3/31 1:31:45am"		
+    $t0 = get-date "1979/3/31"
+    $t1 = get-date "1979/3/31 1:31:45am"		
 ```				
