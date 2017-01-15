@@ -5,24 +5,22 @@
 
 ```
 C#		
+	var all_files = System.IO.Directory.GetFiles("D:\\folder")
+	var all_jpgs = System.IO.Directory.GetFiles("D:\\folder","*.jpg")
 
 Python
+	import os
+	import glob
+	all_files = os.listdir("D:\\folder")
+	all_jpgs = glob.glob("D:\\folder\\*.jpg")
 
 PowerShell	
-	$files = Get-ChildItem		
+	$all_files  = Get-ChildItem d:\folder		
+	$all_jpgs = Get-ChildItem d:\folder\*.jpg	
+	$all_jpgs = Get-ChildItem d:\folder -Filter .jpg
 ```
 
-### Get all files in a folder with a specific extension	
 
-
-```
-C#	
-
-Python
-
-PowerShell
-	$files = Get-ChildItem *.dll		
-```
 
 ### Get all files in a folder recursively	
 
@@ -36,28 +34,20 @@ PowerShell
     $files = Get-ChildItem -Recurse		
 ```
 
-### Get all files in a folder recursivelyand get full pathname	
-
-
-```
-C#			
-
-Python			
-
-PowerShell
-	$files = Get-ChildItem –Recurse | Foreach-Object { $_.FullName}		
-```
-
 ### Getting the My Documents Folder
 
 ```
 
 C#
-
+	string mydocs = System.Environment.GetFolderPath("MyDocuments");
+	
 Python
 
+	import win32com.shell
+	mydocs = win32com.shell.shell.SHGetFolderPath(0, win32com.shell.shellcon.CSIDL_PERSONAL, None, 0)
+
 PowerShell 2.0
-	[Environment]::GetFolderPath("MyDocuments")		
+	$mydocs = [Environment]::GetFolderPath("MyDocuments")		
 				
 ```				
 				
